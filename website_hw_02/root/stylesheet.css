@@ -1,0 +1,62 @@
+#wrapper {
+	width: 1000px;
+	height: auto;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+h1 {
+	color: #9477cb;
+}
+
+#text {
+	position: relative;
+	width: 1000px;
+	height: 150px;
+}
+
+li {
+	font-style: italic;
+}
+
+#photos {
+	position: relative;
+	width: 800px;
+	height: 100px;
+	margin-left: 150px;
+}
+
+.flowerpics {
+	width: 200px;
+	height: 133px;
+	position: relative;
+	float: left;
+	margin-left: 25px;
+}
+
+#last {
+	width: 1000;
+	height: 200;
+	position: relative;
+	float: left;
+	margin-left: 425px;
+	margin-top: 20px;
+}
+
+#lastbit {
+	
+}
+
+#endparagraphs {
+	width: 1000;
+	height: 300;
+	float: left;
+	margin-top: 25px;
+}
+
+#video {
+	width: 640px;
+	height: 480px;
+	position: relative;
+	float: left;
+}
