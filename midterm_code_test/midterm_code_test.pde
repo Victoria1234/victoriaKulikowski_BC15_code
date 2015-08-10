@@ -1,9 +1,12 @@
 int mode = 1;
-int lastMode = 20;
+int lastMode = 18;
 
 PFont yuppy;
 PImage snowflake;
 boolean drawWinter = false;
+
+float transparency;
+float dtrans;
 
 void setup() {
   size(500, 500);
@@ -13,6 +16,11 @@ void setup() {
 }
 
 void draw() {
+  
+ if (drawWinter == true) {
+ text("Happy Winter!", 180, 180);
+  }
+
 
   if (mode == 1) { // 1st snowman
   fill(255);
@@ -55,26 +63,17 @@ void draw() {
   } else if (mode == 18) {
     rect(173, 300, 35, 30);
   }
-  
-  if (drawWinter == true) {
-    text("Happy Winter!", 180, 180);
-  }
-  
-  //fill(255);
-  //ellipse(random(500),random(500),10,10);
-  //noStroke();
-  
 }
-
   
-
-
-
-
+  //noStroke();
+  //float a = map(transparency, 0, 1, 0, 255);
+  //fill(0, 0, 255, a);
+  //ellipse(random(500),random(500),10,10);
+  
 void mousePressed() {
   mode++;
   if (mode > lastMode) {
-    mode = 1;
+   mode = 0;
   }
 }
 
